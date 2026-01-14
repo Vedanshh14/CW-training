@@ -78,8 +78,14 @@ let group = email.parentElement;
   }
 
   if (!hasError) {
-    successMessage.hidden = false;
-    mainCard.hidden = true;
+    successMessage.style.display = "block";
+
+    // mainCard.hidden = true;
     // form.hidden = true;
+    form.reset();
+    setTimeout(()=>{
+        successMessage.style.display = "none";
+    },2000)
+
   }
 });
