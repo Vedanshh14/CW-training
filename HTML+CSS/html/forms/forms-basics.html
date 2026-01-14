@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Forms Basics</title>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+
+    <form action="/submit" method="post">
+      <!-- Text input -->
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <!-- Email input -->
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <!-- Password -->
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <!-- Radio buttons -->
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br /><br />
+
+      <!-- Checkbox -->
+      <input type="checkbox" id="terms" name="terms" />
+      <label for="terms">I agree to terms</label><br /><br />
+
+      <!-- Select -->
+      <label for="city">City:</label><br />
+      <select id="city" name="city">
+        <option value="indore">Indore</option>
+        <option value="bhopal">Bhopal</option>
+        <option value="mumbai">Mumbai</option>
+      </select><br /><br />
+
+      <!-- Submit -->
+      <button type="submit">Register</button>
+    </form>
+  </body>
+</html>

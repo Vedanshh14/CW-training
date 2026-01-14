@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page">
+
+
+    <section class="success-message" id="successMessage"  hidden>
+      <p class="success-title">Message Sent!</p>
+      <p class="success-text">
+        Thanks for completing the form. We'll be in touch soon!
+      </p>
+    </section>
+
+   
+    <section class="main-card">
+
+      <h1>Contact Us</h1>
+
+      <form id="contactForm" novalidate>
+
+      
+        <div class="section">
+
+          <div class="form-group">
+            <label for="firstName">
+              First Name *
+            </label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+            />
+            <p class="error" >
+              This field is required
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName">
+              Last Name *
+            </label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+            />
+            <p class="error" >
+              This field is required
+            </p>
+          </div>
+
+        </div>
+
+       
+        <div class="form-group">
+          <label for="email">
+            Email Address *
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+
+          <p class="error " >
+            This field is required
+          </p>
+
+        </div>
+
+      
+       <div class="form-group">
+  <label>Query Type *</label>
+
+  <div class="query-options">
+    <label class="query-label">
+      <input
+        type="radio"
+        name="queryType"
+        value="general"
+        required
+      />
+      General Enquiry
+    </label>
+
+    <label class="query-label">
+      <input
+        type="radio"
+        name="queryType"
+        value="support"
+      />
+      Support Request
+    </label>
+  </div>
+
+  <p class="error">
+    Please select a query type
+  </p>
+</div>
+
+       
+        <div class="form-group">
+          <label for="message">
+            Message *
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+          ></textarea>
+          <p class="error">
+            This field is required
+          </p>
+        </div>
+
+       
+        <div class="form-group consent-group">
+          <label>
+            <input
+              type="checkbox"
+              id="consent"
+              name="consent"
+              required
+            />
+            <span>
+              I consent to being contacted by the team *
+            </span>
+          </label>
+
+          <p class="error" >
+            To submit this form, please consent to being contacted
+          </p>
+        </div>
+
+  
+        <button type="submit" class="submit-btn">
+          Submit
+        </button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
